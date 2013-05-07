@@ -1,0 +1,9 @@
+The files index.php and demo/page.php was modified, check the comments on this files, the steps to
+hack the system are:
+    - Create a function to using brute force creacks the random generated key, you can see the code
+      commented on the  method saveGame of the demo/page.php class, this action compares the known
+      signature who cames from the server with the random generated signatures until found the correct
+      one and the secret with it
+    - With the secret used by the server create a spoofed cookie
+    - Modify the path to the file with the version whom content is returned on the "X-Tuenti-Powered-By"
+    - Parse the header to get the cookie content, and.... That's all :)

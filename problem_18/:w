@@ -1,0 +1,49 @@
+#!/usr/bin/env pypy
+
+import fileinput
+
+__author__ = "Alonso Vidales"
+__email__ = "alonso.vidales@tras2.es"
+__date__ = "2013-04-29"
+
+class TheGame:
+    __debug = True
+
+    def __searchByDeep(self, inInitialLocation, inPathsToSearch, inVisitedLocations, inCurrentEnergy):
+        for target, energy in inPathsToSearch:
+            if target not in inVisitedLocations:
+                inVisitedLocations.add(target)
+                self.__searchByDeep(inInitialLocation, self.__pathVariations[target], inCurrentEnergy * energy, inVisitedLocations)
+
+    def resolve(self):
+        for location, paths in self.__pathVariations.items():
+            self.__searchByDeep(location, paths, set(), 1)
+
+        return ''
+
+    def __init__(self, inLocations, inMovements, inVariations):
+        self.__locations = inLocations
+        self.__movements = inMovements
+        self.__pathVariations = {}
+        for variation in inVariations:
+            if variation[0] in self.__pathVariations:
+                self.__pathVariations[variation[0]][variation[1]] = float(variation[2]) / 100
+            else:
+                self.__pathVariations[variation[0]] = {variation[1]: float(variation[2]) / 100}
+
+        if self.__debug:
+            print "Locations: %s" % (self.__locations) 
+            print "Movements: %s" % (self.__movements) 
+            print "Variations: %s" % (self.__pathVariations) 
+
+if __name__ == "__main__":
+    problems = int(raw_input())
+
+    for problem in range(problems):
+        locations = int(raw_input())
+        movements = int(raw_input())
+        variations = []
+        for variation in range(movements):
+            variations.append(map(int, raw_input().split()))
+
+        print "%s" % (TheGame(locations, movements, variations).resolve())

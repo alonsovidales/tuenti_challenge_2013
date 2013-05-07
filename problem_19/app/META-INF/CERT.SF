@@ -1,0 +1,55 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: 3Xwy9yyh+lgQjnrGxDIX+qixyIo=
+
+Name: lib/mips/libkeys.so
+SHA1-Digest: 25nbk8zoI+NDHkoU/mIF0WWh/4o=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: uQhdAiwpzle4OMU4KiZ8rHZZW0s=
+
+Name: res/drawable-mdpi/ic_action_search.png
+SHA1-Digest: jAGFiT7RUDOYcmBQqk2FP01Xtb0=
+
+Name: res/layout/screen_main.xml
+SHA1-Digest: YolbsHJEJHka1WqPC1KZCs2vjAk=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: diYsvf3zRlU+JNDApc7+KLVhhk0=
+
+Name: res/menu/screen_main.xml
+SHA1-Digest: ZyoDs2ZJXnhXz4yET7MpZtc3oW8=
+
+Name: lib/armeabi-v7a/libkeys.so
+SHA1-Digest: 8jqTdFUYOFrDMxxc667cAxqyWHw=
+
+Name: res/drawable/image.jpg
+SHA1-Digest: shVuYjqMCabjBsxlsyrmODCtvbw=
+
+Name: resources.arsc
+SHA1-Digest: etScbaEy1paXzb/Z4XONg6Em0Ug=
+
+Name: classes.dex
+SHA1-Digest: mH9bzfhuhCfqrzzhGhirjq3gcnI=
+
+Name: res/drawable-ldpi/ic_launcher.png
+SHA1-Digest: zC+Z/B5ib1ntZmz9D80Rj3muYqE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: W8JTGTeAimXhu0qPRtgp4O6dkO8=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: 7AYLMxFKX2g7vudLLZTXlC9DWHI=
+
+Name: lib/x86/libkeys.so
+SHA1-Digest: o59QsJfPnqBhB9i/LT6kO7LKFdg=
+
+Name: res/drawable-hdpi/ic_action_search.png
+SHA1-Digest: WvsoZfcfGbz7vtTCwzXLh3VcxFw=
+
+Name: lib/armeabi/libkeys.so
+SHA1-Digest: EKNm6OcRTJ12gy0uDZPaQBeOs3k=
+
+Name: res/drawable-xhdpi/ic_action_search.png
+SHA1-Digest: 772ITFXOlprwo44bOLvLMa3Vdeg=
+
